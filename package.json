@@ -27,9 +27,5 @@
     "less-loader": "^5.0.0",
     "postcss-px-to-viewport": "^1.1.1",
     "vue-template-compiler": "^2.6.11"
-  },
-  "prettier": {
-    "singleQuote": true,
-    "semi": true
   }
 }

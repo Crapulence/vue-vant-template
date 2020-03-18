@@ -1,7 +1,7 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 const routes = [{
     path: '*',
@@ -26,22 +26,22 @@ const routes = [{
       title: '商品详情'
     }
   }
-];
+]
 
 routes.forEach(route => {
   route.path = route.path || '/' + (route.name || '');
-});
+})
 
 const router = new VueRouter({
   routes
-});
+})
 
 router.beforeEach((to, _, next) => {
-  const title = to.meta && to.meta.title;
+  const title = to.meta && to.meta.title
   if (title) {
-    document.title = title;
+    document.title = title
   }
-  next();
-});
+  next()
+})
 
-export default router;
+export default router
